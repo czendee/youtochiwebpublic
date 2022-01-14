@@ -1,0 +1,20 @@
+  
+version: '3.5'
+
+services:
+    app:
+        build: .
+        container_name: quote-banwire-front
+        restart: always
+        ports:
+            - "8083:80"
+        environment: 
+            - NODE_ENV=production
+            - PUBLIC_URL=https://sandbox.banwire.com/chargebacks/
+            - PUBLIC_SERVICE_AUTH=https://sandbox.banwire.com/auth/v1/
+            - PUBLIC_SERVICE_CHARGEBACK=https://sandbox.banwire.com/chargebacks/v1/
+        networks:
+            - service-platform-nginx-network
+networks:
+    service-platform-nginx-network:
+        external: true
