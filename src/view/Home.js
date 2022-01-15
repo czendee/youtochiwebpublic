@@ -340,6 +340,10 @@ function validaRFC(rfc){
         console.log(jsonPayload)
         return JSON.parse(jsonPayload);
       };
+      
+      
+       in the header tag this was used <Header logOut={logOut} getUserInfo={getUserInfo}></Header> 
+       
 */
   return (
     <Fragment>
@@ -347,7 +351,7 @@ function validaRFC(rfc){
       <header className = "App-header">
       <div className="App">
 
-        <!--<Header logOut={logOut} getUserInfo={getUserInfo}></Header>  -->
+        
         <Header logOut={logOut} ></Header>  
         
     <div>
