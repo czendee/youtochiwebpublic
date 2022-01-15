@@ -23,7 +23,6 @@ class Login extends Component {
         let fields = this.state.fields;
         fields[e.target.name] = e.target.value;
         this.setState({fields});
-        //
     }
 
     submituserRegistrationForm(e) {
@@ -67,8 +66,93 @@ class Login extends Component {
       this.setState({errors: errors});
       return formIsValid;
     }
+
     
-    signIn = () => {
+   creaCotizacion = () => {
+       console.log('creaCotizacion paso 1');
+        const data = { numero : "122", name: "primero", ejecutivo:"MRCanceco01" };
+        const requestInfo = {
+            method: 'POST',
+            body:JSON.stringify(data),
+            headers: new Headers({
+                'Content-Type':'application/json'
+            }),
+        };
+     
+        console.log('creaCotizacion paso 2');
+/*
+        if (!pattern.test(data.email)){
+            this.setState({ message : 'El correo electronicó no es válido.' });  
+@@ -27,7 +27,7 @@ const FiltroReportes= () => {
+            return
+        }
+*/
+
+
+        fetch('http://peaceful-retreat-91246.herokuapp.com/banwireapi/cotizaciones', requestInfo)
+        .then(response =>{
+            if(response.ok){
+                return response.json()
+            }
+            
+            throw new Error("Error cotizacioness.");
+        })
+        .then( data => {
+              console.log('data = ', data);
+         })       
+        .catch(e => {
+            this.setState({ message: e.message });   
+        });
+       
+       console.log('creaCotizacion paso 3');
+
+    }
+        
+        
+    traeCotizaciones = () => {
+        const data = { numero : "122", name: "primero"};
+        console.log('traeCotizaciones paso 1');
+     
+
+/*
+        if (!pattern.test(data.email)){
+            this.setState({ message : 'El correo electronicó no es válido.' });  
+@@ -27,7 +27,7 @@ const FiltroReportes= () => {
+            return
+        }
+*/
+/*
+                        <div className="mar_t_4 mar_b_4">
+                        <input type="submit" className="forma submit_log bot_log_temp"  value="Lista Cotizaciones" onClick={this.traeCotizaciones}/>
+                        </div>
+                        <div className="mar_t_4 mar_b_4">
+                        <input type="submit" className="forma submit_log bot_log_temp"  value="CREA COTIZACION" onClick={this.creaCotizacion}/>
+                        </div>
+*/
+
+        fetch('http://peaceful-retreat-91246.herokuapp.com/banwireapi/cotizacionesbynumero2/NADA/NADA/NADA')
+        .then(response =>{
+            console.log('traeCotizaciones response  1');
+            if(response.ok){
+                return response.json()
+            }
+            
+            throw new Error("Error cotizacioness.");
+        })
+        .then( data => {
+            console.log('traeCotizaciones paso data 1');
+              console.log('data = ', data);
+         })
+        .catch(e => {
+            console.log('traeCotizaciones paso error 2');
+            this.setState({ message: e.message });   
+        });
+        
+        console.log('traeCotizaciones paso 3');
+
+    }
+
+        signIn = () => {
 
         const data = { email: this.email, password: this.password};
         const requestInfo = {
@@ -100,28 +184,30 @@ class Login extends Component {
         })
 
         .then(token => {
+            
             localStorage.setItem("token-chargebacks-jwt", token.access_token);
-            localStorage.setItem("token-chargebacks-refresh", token.refresh_token);
-            this.props.history.push("/chargebacks/home");
+//no refresh in the back             localStorage.setItem("token-chargebacks-refresh", token.refresh_token);
+            this.props.history.push("/quote/home");
             return;
         })
         .catch(e => {
             this.setState({ message: e.message });   
         });
     }
-    
+
+        
     render() {
         
 
   return (
     <Fragment>
-    <div className="App">
-    <header className = "App-header">
+    <div className="App h_100">
+    <header className = "App-header h_100">
 
 
-    <div className="forma login">
-        <div className="contenedor3 center">
-            <div className="d50 left_">
+    <div className="forma login h_100">
+        <div className="contenedor3 center h_100">
+            <div className="d50 center">
                 <form className="d70 left_ form_log" name="userRegistrationForm"  onSubmit= {this.submituserRegistrationForm}> 
 
                     <img src={logo} className="center no_mov logo_log_" />
@@ -135,7 +221,7 @@ class Login extends Component {
                             id="email" 
                             onChange={ e => this.email = e.target.value }
                             name="email"
-                            placeholder="example@banwire.com" />
+                            placeholder="example@youtochi.com" />
                     </div>
                     <div className="form_inp forma mar_t_1">
                         <label>Password</label>
@@ -156,9 +242,8 @@ class Login extends Component {
                         <div className="mar_t_4 mar_b_4">
                         <input type="submit" className="forma submit_log bot_log_temp"  value="ACCEDER" onClick={this.signIn}/>
                         </div>
-                        <div className="forma">
-                            <a className="rec_c forma" href="/chargebacks/account/reset">RECUPERAR CCCCONTRASEÑA</a>
-                        </div>
+
+
                     </div>
                 </form>
             </div>

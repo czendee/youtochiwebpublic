@@ -42,7 +42,7 @@ class Cambiar extends Component {
        })
        .then(token => {
         localStorage.setItem('token', token);
-        this.props.history.push("/chargebacks");
+        this.props.history.push("/quote");
         return;
         })
        .catch(e => {

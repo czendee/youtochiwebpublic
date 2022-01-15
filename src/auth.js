@@ -3,7 +3,8 @@ import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 
 const isAuth = () => {
-    if (localStorage.getItem('token-chargebacks-jwt') !== null && localStorage.getItem('token-chargebacks-refresh')){
+//    if (localStorage.getItem('token-chargebacks-jwt') !== null && localStorage.getItem('token-chargebacks-refresh')){
+    if (localStorage.getItem('token-chargebacks-jwt') !== null ){        
         return true
     }
     return false;
@@ -18,7 +19,8 @@ const PrivateRoute = ({component: Component, ...rest}) => {
             ): (
                 <Redirect 
                 to={{
-                    pathname: '/chargebacks',
+                    pathname: '/quote',
+//                    pathname: '/quote/quotes',        
                     state: {message: 'Ingresa tus accesos'}
                 }}
                 />
@@ -32,7 +34,8 @@ const PublicRoute = ({component: Component, ...rest}) => {
         <Route {...rest} render={props => isAuth() ? (
             <Redirect 
             to={{
-                pathname: '/chargebacks/home',
+                pathname: '/quote',        
+//                pathname: '/quote/quotes',
                 state: {message: 'Session Activa'}
             }}
             />

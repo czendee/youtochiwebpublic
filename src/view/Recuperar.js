@@ -63,7 +63,7 @@ class Recuperar extends Component {
                    
                     <div className="form_inp forma mar_t_3">
                         <label>Usuario</label>
-                        <input type="text" className="forma usuario" id="email" onChange={ e => this.email = e.target.value } placeholder="example@banwire.com" />
+                        <input type="text" className="forma usuario" id="email" onChange={ e => this.email = e.target.value } placeholder="example@youtochi.com" />
                     </div>
                     {
                         this.state.message !== ''? (

@@ -7,12 +7,12 @@ services:
         container_name: quote-banwire-front
         restart: always
         ports:
-            - "8083:80"
+            - "8060:80"
         environment: 
             - NODE_ENV=production
-            - PUBLIC_URL=https://sandbox.banwire.com/chargebacks/
+            - PUBLIC_URL=https://sandbox.banwire.com/quote-front/
             - PUBLIC_SERVICE_AUTH=https://sandbox.banwire.com/auth/v1/
-            - PUBLIC_SERVICE_CHARGEBACK=https://sandbox.banwire.com/chargebacks/v1/
+            - PUBLIC_SERVICE_CHARGEBACK=https://sandbox.banwire.com/quote-front/v1/
         networks:
             - service-platform-nginx-network
 networks:
