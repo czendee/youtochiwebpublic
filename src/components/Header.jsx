@@ -20,8 +20,10 @@ const Header = (props) => {
   }
 
   function showData(){
-    var data = props.getUserInfo()
-    return `${data.user.name} - ${data.role.name}`
+    //var data = props.getUserInfo()
+    //return `${data.user.name} - ${data.role.name}`
+    
+    return `Carlos - Admin`
   }
 
   return (
