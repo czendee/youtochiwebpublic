@@ -327,7 +327,7 @@ function validaRFC(rfc){
         props.history.push("/quote");
         return
       };
-
+/*
       var getUserInfo = () => {
         var storage = localStorage.getItem('token-chargebacks-jwt');
 
@@ -340,15 +340,15 @@ function validaRFC(rfc){
         console.log(jsonPayload)
         return JSON.parse(jsonPayload);
       };
-
+*/
   return (
     <Fragment>
     <div className="App">
       <header className = "App-header">
       <div className="App">
 
-        <Header logOut={logOut} getUserInfo={getUserInfo}></Header>
-        
+        <!--<Header logOut={logOut} getUserInfo={getUserInfo}></Header>  -->
+        <Header logOut={logOut} ></Header>  
         
     <div>
    
