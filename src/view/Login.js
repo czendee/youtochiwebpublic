@@ -174,7 +174,8 @@ class Login extends Component {
         }
 
 
-        fetch('https://sandbox.banwire.com/auth/v1/account/login', requestInfo)
+        //fetch('https://sandbox.banwire.com/auth/v1/account/login', requestInfo)
+        fetch('https://peaceful-retreat-91246.herokuapp.com/autenticarusuario', requestInfo)
         .then(response =>{
             if(response.ok){
                 return response.json()
@@ -185,7 +186,8 @@ class Login extends Component {
 
         .then(token => {
             
-            localStorage.setItem("token-chargebacks-jwt", token.access_token);
+//old            localStorage.setItem("token-chargebacks-jwt", token.access_token);
+                 localStorage.setItem("token-chargebacks-jwt", token);
 //no refresh in the back             localStorage.setItem("token-chargebacks-refresh", token.refresh_token);
             this.props.history.push("/quote/home");
             return;
