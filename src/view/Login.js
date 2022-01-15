@@ -154,7 +154,7 @@ class Login extends Component {
 
         signIn = () => {
 
-        const data = { email: this.email, password: this.password};
+        const data = { usuario: this.email, contrasena: this.password};
         const requestInfo = {
             method: 'POST',
             body:JSON.stringify(data),
@@ -163,12 +163,13 @@ class Login extends Component {
             }),
         };
         
-        if (!pattern.test(data.email)){
+//        if (!pattern.test(data.usuario)){
+        if (!data.usuario){            
             this.setState({ message : 'El correo electronicó no es válido.' });  
             return
         }
 
-        if (!data.password) {
+        if (!data.contrasena) {
             this.setState({ message : 'Debes ingresar tu password.' }); 
             return
         }
