@@ -3,6 +3,7 @@ import  { Switch } from 'react-router-dom';
 import {PrivateRoute, PublicRoute} from './auth';
 import Home from './view/Home';
 import History from './view/History';
+import Historyfacturacion from './view/Historyfacturacion';
 import QuoteDetails from './view/QuoteDetails';
 import UsersDetails from './view/UsersDetails';
 import Quote from './view/Quote';
@@ -29,6 +30,7 @@ const Routes = () => {
                <PublicRoute exact path='/quote/account/validation' component ={Valida} />
                <PublicRoute exact path='/quote/account/send' component ={Enviar} /> 
                <PrivateRoute exact path='/quote/quotes' component ={History} />
+               <PrivateRoute exact path='/quote/invoices' component ={Historyfacturacion} />
                <PrivateRoute exact path='/quote/users' component ={Users} />
                <PrivateRoute exact path='/quote/quote' component ={Quote} />
                <PrivateRoute exact path='/quote/quotecreated' component ={QuoteCreated} />
