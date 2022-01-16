@@ -46,7 +46,7 @@ const Header = (props) => {
               <a href="/quote/quotes" className="menu_a menu_a_2">
                 DASHBOARDS
               </a>
-              <a href="/quote/quotes" className="menu_a menu_a_2">
+              <a href="/quote/invoices" className="menu_a menu_a_2">
                 FACTURACION
               </a>
               <a href="/quote/quotes" className="menu_a menu_a_2">
