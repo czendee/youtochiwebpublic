@@ -43,7 +43,7 @@ const Header = (props) => {
               <a href="/quote/home" className="menu_a menu_a_1">
                 AREA TRABAJO
               </a>
-              <a href="/quote/quotes" className="menu_a menu_a_2">
+              <a href="/quote/dashboards" className="menu_a menu_a_2">
                 DASHBOARDS
               </a>
               <a href="/quote/invoices" className="menu_a menu_a_2">
