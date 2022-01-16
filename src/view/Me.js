@@ -350,7 +350,7 @@ function validaRFC(rfc){
                 <h2 className="forma">
                     Metaverso<br/><small><span>*</span> Campos necesarios</small>
                           <iframe src="https://www.muse.place/youtochi" 
-                            width=1000 height=1000 title="ver como se ve">
+                            width="1000" height="1000" title="ver como se ve">
                         </iframe> 
                 </h2>
                 <div className="forma">
