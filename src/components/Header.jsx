@@ -38,7 +38,16 @@ const Header = (props) => {
           
             <div className="menu_ d60 left_ t_right menu">
               <a href="/quote/home" className="menu_a menu_a_1">
-                COTIZADOR
+                METAVERSO
+              </a>
+              <a href="/quote/home" className="menu_a menu_a_1">
+                AREA TRABAJO
+              </a>
+              <a href="/quote/quotes" className="menu_a menu_a_2">
+                DASHBOARDS
+              </a>
+              <a href="/quote/quotes" className="menu_a menu_a_2">
+                FACTURACION
               </a>
               <a href="/quote/quotes" className="menu_a menu_a_2">
                 COTIZACIONES
