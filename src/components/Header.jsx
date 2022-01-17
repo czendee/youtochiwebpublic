@@ -46,15 +46,6 @@ const Header = (props) => {
               <a href="/quote/dashboards" className="menu_a menu_a_2">
                 DASHBOARDS
               </a>
-              <a href="/quote/invoices" className="menu_a menu_a_2">
-                FACTURACION
-              </a>
-              <a href="/quote/quotes" className="menu_a menu_a_2">
-                COTIZACIONES
-              </a>
-              <a href="/quote/users" className="menu_a menu_a_1">
-                USUARIOS
-              </a>
               <a onClick={props.logOut} className="menu_a menu_a_2">
               {showData()} / SALIR
               </a>
