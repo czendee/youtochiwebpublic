@@ -37,10 +37,10 @@ const Header = (props) => {
             </a>
           
             <div className="menu_ d60 left_ t_right menu">
-              <a href="/quote/home" className="menu_a menu_a_1">
+              <a href="/quote/me" className="menu_a menu_a_1">
                 METAVERSO
               </a>
-              <a href="/quote/me" className="menu_a menu_a_1">
+              <a href="/quote/home" className="menu_a menu_a_1">
                 MI AREA
               </a>
               <a href="/quote/dashboards" className="menu_a menu_a_2">
