@@ -348,8 +348,8 @@ function validaRFC(rfc){
         <form className="forma validar" ref={formRef} id='userForm' name='' action='quote' onSubmit={handleSubmit} >
             <div className="contenedor3 center pad_lr_30">  
                 <h2 className="forma">
-                    Metaverso<br/><small><span>*</span> Campos necesarios</small>
-                          <iframe src="https://www.muse.place/youtochi" 
+                    Metaverso<br/><small><span>*</span> Mission</small>
+                          <iframe src="https://www.muse.place/carlos1" 
                             width="1000" height="1000" title="ver como se ve">
                         </iframe> 
                 </h2>
