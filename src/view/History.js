@@ -179,7 +179,7 @@ const History = (props) => {
               valeListammc =parlistamcc;
           }
            console.log('carlos z paso 2.5:' +laUrlmandar);
-          var laUrlmandar='https://sandbox.banwire.com/quote-back/banwireapi/cotizacionesbynumero2/'+valeId+'/'+valeNamenegocio+'/'+valeEjecutivo+'/'+valeContacto+'/'+valeMontomes +'/NADA/NADA/'+valeListammc;
+          var laUrlmandar='https://sandbox.generic.com/quote-back/api/cotizacionesbynumero2/'+valeId+'/'+valeNamenegocio+'/'+valeEjecutivo+'/'+valeContacto+'/'+valeMontomes +'/NADA/NADA/'+valeListammc;
           console.log('carlos z paso 2.6:' +laUrlmandar);
 
                 fetch(laUrlmandar, requestInfo)
@@ -319,7 +319,7 @@ const History = (props) => {
       console.log('carlos z paso 2.7:' +tcampoendf.value);
           console.log('carlos z paso 2.8:' +tcampolistamcc.value);
       
-          var laUrlmandar='https://sandbox.banwire.com/quote-back/banwireapi/cotizacionesbynumero2/20200800007/NADA/NADA';
+          var laUrlmandar='https://sandbox.generic.com/quote-back/api/cotizacionesbynumero2/20200800007/NADA/NADA';
            var valeId="NADA";
           if(tcampoidcotizacion.value === ""){
               
@@ -361,10 +361,10 @@ const History = (props) => {
           
       
            console.log('carlos z paso 2.5:' +laUrlmandar);
-          laUrlmandar='https://sandbox.banwire.com/quote-back/banwireapi/cotizacionesbynumero2/'+valeId+'/'+valeNamenegocio+'/'+valeEjecutivo+'/'+valeContacto+'/'+valeMontomes +'/'+tcampostartf.value+'/'+tcampoendf.value+'/'+valeListammc;
+          laUrlmandar='https://sandbox.generic.com/quote-back/api/cotizacionesbynumero2/'+valeId+'/'+valeNamenegocio+'/'+valeEjecutivo+'/'+valeContacto+'/'+valeMontomes +'/'+tcampostartf.value+'/'+tcampoendf.value+'/'+valeListammc;
           console.log('carlos z paso 2.6:' +laUrlmandar);
-//                fetch('http://peaceful-retreat-91246.herokuapp.com/banwireapi/cotizacionesbynumero2/20200800007/NADA/NADA', requestInfo)
-//                fetch('https://sandbox.banwire.com/quote-back/banwireapi/cotizacionesbynumero2/20200800007/NADA/NADA', requestInfo)
+//                fetch('http://peaceful-retreat-91246.herokuapp.com/api/cotizacionesbynumero2/20200800007/NADA/NADA', requestInfo)
+//                fetch('https://sandbox.generic.com/quote-back/api/cotizacionesbynumero2/20200800007/NADA/NADA', requestInfo)
                 fetch(laUrlmandar, requestInfo)
                 .then(response =>{
                     console.log('carlos z paso 3' );
@@ -605,7 +605,7 @@ const History = (props) => {
                                 <a href="/quote/quotedetails" className="left_ d33 icons_a">
                                     <img src={edit} />  
                                 </a>
-                                <a href="javascript:window.open('https://sandbox.banwire.com/quote-back/banwireapi/traepdf');" className="left_ d33 icons_a">
+                                <a href="javascript:window.open('https://sandbox.generic.com/quote-back/api/traepdf');" className="left_ d33 icons_a">
                                     <img src={download} /> 
                                 </a>
                                 <a href="" className="left_ d33 icons_a">
