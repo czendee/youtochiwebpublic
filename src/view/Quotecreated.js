@@ -44,11 +44,11 @@ const Quotecreated = (props) => {
 
    
                console.log('carlos z paso 1.0' );
-       //fetch('http://peaceful-retreat-91246.herokuapp.com/banwireapi/cotizaciones', requestInfo)
+       //fetch('http://peaceful-retreat-91246.herokuapp.com/api/cotizaciones', requestInfo)
    
-//       window.open('https://sandbox.banwire.com/quote-back/banwireapi/traepdf/'+idcotizacion);
+//       window.open('https://sandbox.generic.com/quote-back/api/traepdf/'+idcotizacion);
         console.log('carlos z paso 1.1' );
-/*       fetch('https://sandbox.banwire.com/quote-back/banwireapi/traepdf', requestInfo)
+/*       fetch('https://sandbox.generic.com/quote-back/api/traepdf', requestInfo)
        .then(response =>{
             console.log('carlos z quotecreated paso 1.1' );
             console.log(response);
@@ -107,7 +107,7 @@ const Quotecreated = (props) => {
 
                         var valurl='';
        
-                              valurl= valurl+' <a href="javascript:window.open(\'https://sandbox.banwire.com/quote-back/banwireapi/traepdf/'+idcotizacion02+'\');"  className="left_ d33 icons_a download"> ';                             
+                              valurl= valurl+' <a href="javascript:window.open(\'https://sandbox.generic.com/quote-back/banwireapi/traepdf/'+idcotizacion02+'\');"  className="left_ d33 icons_a download"> ';                             
                               valurl= valurl+'  Ver PDF     ';
                              valurl= valurl+' </a>';
                             return {__html: valurl};
