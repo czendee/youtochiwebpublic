@@ -250,7 +250,7 @@ const UsersDetails = (props) => {
                         </div>
                         <div className="forma mar_b_2">
                             <label className="forma">E-mail</label>
-                            <input type="text" className="t_left" name="" placeholder="erodriguez@banwire.com"/>
+                            <input type="text" className="t_left" name="" placeholder="erodriguez@generic.com"/>
                         </div>
                         <div className="forma mar_b_2">
                             <label className="forma">Vincular cuentas</label>
