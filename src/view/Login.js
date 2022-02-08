@@ -89,7 +89,7 @@ class Login extends Component {
 */
 
 
-        fetch('http://peaceful-retreat-91246.herokuapp.com/banwireapi/cotizaciones', requestInfo)
+        fetch('http://peaceful-retreat-91246.herokuapp.com/api/cotizaciones', requestInfo)
         .then(response =>{
             if(response.ok){
                 return response.json()
@@ -130,7 +130,7 @@ class Login extends Component {
                         </div>
 */
 
-        fetch('http://peaceful-retreat-91246.herokuapp.com/banwireapi/cotizacionesbynumero2/NADA/NADA/NADA')
+        fetch('http://peaceful-retreat-91246.herokuapp.com/api/cotizacionesbynumero2/NADA/NADA/NADA')
         .then(response =>{
             console.log('traeCotizaciones response  1');
             if(response.ok){
@@ -175,7 +175,7 @@ class Login extends Component {
         }
 
 
-        //fetch('https://sandbox.banwire.com/auth/v1/account/login', requestInfo)
+        //fetch('https://sandbox.generico.com/auth/v1/account/login', requestInfo)
         fetch('https://peaceful-retreat-91246.herokuapp.com/autenticarusuario', requestInfo)
         .then(response =>{
             if(response.ok){
