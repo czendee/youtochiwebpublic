@@ -22,7 +22,7 @@ const Valida = () => {
         }),
     };
 
-    fetch('https://sandbox.banwire.com/auth/v1/account/active', requestInfo)
+    fetch('https://sandbox.generic.com/auth/v1/account/active', requestInfo)
     .then(response =>{
         if(response.ok){
 
