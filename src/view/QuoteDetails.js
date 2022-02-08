@@ -40,7 +40,7 @@ const UsersDetails = (props) => {
     if((cotizacion_id!== null) ){
           //fetch the cotizacion
 
-                   var laUrlmandar='https://sandbox.banwire.com/quote-back/banwireapi/cotizacionbynumero/'+cotizacion_id;
+                   var laUrlmandar='https://sandbox.generic.com/quote-back/api/cotizacionbynumero/'+cotizacion_id;
                    console.log('carlos z  carga inicial 1:' +laUrlmandar);
                 fetch(laUrlmandar, requestInfo)
                 .then(response =>{
@@ -179,7 +179,7 @@ const UsersDetails = (props) => {
                 const tcampocontactoemail = document.getElementById("contactoemail");
                 const tcampocontactontel = document.getElementById("contactotel");
             
-                var laUrlmandar='https://sandbox.banwire.com/quote-back/banwireapi/cotizacionesbynumero2/20200800007/NADA/NADA';
+                var laUrlmandar='https://sandbox.generic.com/quote-back/api/cotizacionesbynumero2/20200800007/NADA/NADA';
                 var valeNegocio="NADA";
                 if(tcamponamenegocio.value === ""){
 
@@ -210,7 +210,7 @@ const UsersDetails = (props) => {
 
 
                  console.log('carlos z editarCotizacion paso 2.5:' +laUrlmandar);
-                laUrlmandar='https://sandbox.banwire.com/quote-back/banwireapi/cotizacionmodificar/'+valeId+'/'+valeNegocio+'/'+valeContactoName+'/'+valeEmailnegocio+'/'+valeTelContacto;
+                laUrlmandar='https://sandbox.generic.com/quote-back/api/cotizacionmodificar/'+valeId+'/'+valeNegocio+'/'+valeContactoName+'/'+valeEmailnegocio+'/'+valeTelContacto;
                 console.log('carlos z editarCotizacion paso 2.6:' +laUrlmandar);
 
                  console.log('carlos z editarCotizacion paso 0.2' );
