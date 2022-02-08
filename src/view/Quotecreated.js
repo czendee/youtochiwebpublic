@@ -107,7 +107,7 @@ const Quotecreated = (props) => {
 
                         var valurl='';
        
-                              valurl= valurl+' <a href="javascript:window.open(\'https://sandbox.generic.com/quote-back/banwireapi/traepdf/'+idcotizacion02+'\');"  className="left_ d33 icons_a download"> ';                             
+                              valurl= valurl+' <a href="javascript:window.open(\'https://sandbox.generic.com/quote-back/api/traepdf/'+idcotizacion02+'\');"  className="left_ d33 icons_a download"> ';                             
                               valurl= valurl+'  Ver PDF     ';
                              valurl= valurl+' </a>';
                             return {__html: valurl};
