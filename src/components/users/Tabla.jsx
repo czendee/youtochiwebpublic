@@ -45,7 +45,7 @@ const TablaUsuarios= () => {
                                55 1492 5259
                             </td>
                             <td>
-                                erodriguez@banwire.com
+                                erodriguez@generic.com
                             </td>
                             <td className="t_center">
                                <a href="/quote/quotes" className="user_tab">5</a>
@@ -107,7 +107,7 @@ const TablaUsuarios= () => {
                                55 1492 5259
                             </td>
                             <td>
-                                erodriguez@banwire.com
+                                erodriguez@generic.com
                             </td>
                             <td className="t_center">
                                <a href="/quote/quotes" className="user_tab">5</a>
@@ -138,7 +138,7 @@ const TablaUsuarios= () => {
                                55 1492 5259
                             </td>
                             <td>
-                                erodriguez@banwire.com
+                                erodriguez@genric.com
                             </td>
                             <td className="t_center">
                                <a href="/quote/quotes" className="user_tab">5</a>
@@ -169,7 +169,7 @@ const TablaUsuarios= () => {
                                55 1492 5259
                             </td>
                             <td>
-                                erodriguez@banwire.com
+                                erodriguez@generic.com
                             </td>
                             <td className="t_center">
                                <a href="/quote/quotes" className="user_tab">5</a>
@@ -200,7 +200,7 @@ const TablaUsuarios= () => {
                                55 1492 5259
                             </td>
                             <td>
-                                erodriguez@banwire.com
+                                erodriguez@generic.com
                             </td>
                             <td className="t_center">
                                <a href="/quote/quotes" className="user_tab">5</a>
