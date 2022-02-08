@@ -756,8 +756,8 @@ function createMarkup() { return {__html: content}; };
                  };
 
                  console.log('carlos z paso 0.2' );
-                 //fetch('http://peaceful-retreat-91246.herokuapp.com/banwireapi/cotizaciones', requestInfo)
-                 fetch('https://sandbox.banwire.com/quote-back/banwireapi/cotizaciones', requestInfo)
+                 //fetch('http://peaceful-retreat-91246.herokuapp.com/api/cotizaciones', requestInfo)
+                 fetch('https://sandbox.generic.com/quote-back/api/cotizaciones', requestInfo)
                  .then(response =>{
                       console.log('carlos z paso 1.1' );
                       console.log(response);
