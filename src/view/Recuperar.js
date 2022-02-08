@@ -28,7 +28,7 @@ class Recuperar extends Component {
             return
         }
 
-       fetch('https://sandbox.banwire.com/auth/v1/account/reset', requestInfo)
+       fetch('https://sandbox.generic.com/auth/v1/account/reset', requestInfo)
        .then(response =>{
            if(response.ok){
                return response.json()
