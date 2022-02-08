@@ -30,8 +30,8 @@ class Creacotizaciones extends Component {
                     method: 'GET',
               };
         this.messajin = 'buscarCotizacion paso 2';
-//                fetch('http://peaceful-retreat-91246.herokuapp.com/banwireapi/cotizacionesbynumero2/20200800007/NADA/NADA', requestInfo)
-                fetch('https://sandbox.banwire.com/quote-back/banwireapi/cotizacionesbynumero2/20200800007/NADA/NADA', requestInfo)
+//                fetch('http://peaceful-retreat-91246.herokuapp.com/api/cotizacionesbynumero2/20200800007/NADA/NADA', requestInfo)
+                fetch('https://sandbox.generic.com/quote-back/api/cotizacionesbynumero2/20200800007/NADA/NADA', requestInfo)
                 .then(response =>{
                     this.messajin = 'buscarCotizacion paso 3';
                   console.log(response);
@@ -747,8 +747,8 @@ var yyyy = mytoday.getFullYear();
         };
 
 
-//        fetch('http://peaceful-retreat-91246.herokuapp.com/banwireapi/cotizaciones', requestInfo)
-        fetch('https://sandbox.banwire.com/quote-back/banwireapi/cotizaciones', requestInfo)
+//        fetch('http://peaceful-retreat-91246.herokuapp.com/api/cotizaciones', requestInfo)
+        fetch('https://sandbox.generic.com/quote-back/api/cotizaciones', requestInfo)
     
         .then(response =>{
           console.log(response);
