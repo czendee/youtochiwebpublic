@@ -44,8 +44,8 @@ const Quotepdf = (props) => {
         };  
 
                console.log('carlos z paso 1.0' );
-       //fetch('http://peaceful-retreat-91246.herokuapp.com/banwireapi/cotizaciones', requestInfo)
-       fetch('https://sandbox.banwire.com/quote-back/banwireapi/traepdf/'+idcotizacion, requestInfo)
+       //fetch('http://peaceful-retreat-91246.herokuapp.com/api/cotizaciones', requestInfo)
+       fetch('https://sandbox.generic.com/quote-back/api/traepdf/'+idcotizacion, requestInfo)
        .then(response =>{
             console.log('carlos z quotecreated paso 1.1' );
             console.log(response);
