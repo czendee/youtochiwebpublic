@@ -4,15 +4,15 @@ version: '3.5'
 services:
     app:
         build: .
-        container_name: quote-banwire-front
+        container_name: quotegeneric-front
         restart: always
         ports:
             - "8060:80"
         environment: 
             - NODE_ENV=production
-            - PUBLIC_URL=https://sandbox.banwire.com/quote-front/
-            - PUBLIC_SERVICE_AUTH=https://sandbox.banwire.com/auth/v1/
-            - PUBLIC_SERVICE_CHARGEBACK=https://sandbox.banwire.com/quote-front/v1/
+            - PUBLIC_URL=https://sandbox.generic.com/quote-front/
+            - PUBLIC_SERVICE_AUTH=https://sandbox.generic.com/auth/v1/
+            - PUBLIC_SERVICE_CHARGEBACK=https://sandbox.generic.com/quote-front/v1/
         networks:
             - service-platform-nginx-network
 networks:
