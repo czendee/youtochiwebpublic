@@ -33,7 +33,7 @@ class Cambiar extends Component {
             return
         }
 
-        fetch('https://sandbox.banwire.com/auth/v1/account/change', requestInfo)
+        fetch('https://sandbox.generic.com/auth/v1/account/change', requestInfo)
        .then(response =>{
            if(response.ok){
                return response.json()
