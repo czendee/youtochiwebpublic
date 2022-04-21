@@ -348,7 +348,7 @@ function validaRFC(rfc){
                 <h2 className="forma">
                     Bot Leonorildo<br/><small><span>*</span> Ayudante</small>
                           <iframe src="https://leonorildo.onrender.com/" 
-                            width="1000" height="1000" title="ver como se ve">
+                            width="1200" height="1000" title="ver como se ve">
                         </iframe> 
                 </h2>
 
