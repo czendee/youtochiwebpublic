@@ -40,6 +40,9 @@ const Header = (props) => {
               <a href="/quote/me" className="menu_a menu_a_1">
                 METAVERSO
               </a>
+              <a href="/quote/ayudante" className="menu_a menu_a_1">
+                BOT Leonorildo
+              </a>
               <a href="/quote/home" className="menu_a menu_a_1">
                 MI AREA
               </a>
