@@ -3,6 +3,7 @@ import  { Switch } from 'react-router-dom';
 import {PrivateRoute, PublicRoute} from './auth';
 import Home from './view/Home';
 import Me from './view/Me';
+import Ayudante from './view/Ayudante';
 import History from './view/History';
 import Historyfacturacion from './view/Historyfacturacion';
 import Historydashboards from './view/Dashboards';
@@ -43,6 +44,7 @@ const Routes = () => {
                <PrivateRoute exact path='/quote/usersdetails' component ={UsersDetails} />
                <PrivateRoute exact path='/quote/home' component ={Home} />
                <PrivateRoute exact path='/quote/me' component ={Me} />
+               <PrivateRoute exact path='/quote/ayudante' component ={Ayudante} />
             </Switch>
         );
     }
