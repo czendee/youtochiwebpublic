@@ -412,7 +412,7 @@ const Dashboards = (props) => {
                            console.log('carlos z  function updateTable paso 4.2' );     
                           console.log('carlos z  function updateTable paso 4.3:' +res); 
                           res= contenidoNuevo.replace("D22SG-JG","<td>"+ data[i].numero+"</td>");
-                          res= res.replace("18 / 05 / 2034", "<td>"+data[i]fecha+"</td>");
+                          res= res.replace("18 / 05 / 2034", "<td>"+data[i].fecha+"</td>");
                           res= res.replace("Ultima Mudanza", "<td>"+data[i].tipo+"</td>");
                           res= res.replace("MA0123001", "<td>"+data[i].numerito+"</td>");
                           res= res.replace("Marita", "<td>"+data[i].name);
