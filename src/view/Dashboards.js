@@ -386,7 +386,6 @@ const Dashboards = (props) => {
                         console.log(data);
                     
                     //campos del json en mongo : numero  fecharhoracreacion  ejecutivo   
-//                    updateTable(data, ['numero', 'fecharhoracreacion', 'ejecutivo']);
                       
                       var tablitaContainer = document.getElementById("tablitaresultados");//tbody
                       var renglonEjemplo = document.getElementById("rengloncito");    
@@ -413,12 +412,11 @@ const Dashboards = (props) => {
                            console.log('carlos z  function updateTable paso 4.2' );     
                           console.log('carlos z  function updateTable paso 4.3:' +res); 
                           res= contenidoNuevo.replace("D22SG-JG","<td>"+ data[i].numero+"</td>");
-                          res= res.replace("Ejemplo MCC", "<td>"+data[i].datoscliente.girommc+"</td>");
-                          res= res.replace("20/03/2020", "<td>"+data[i].name+"</td>");
-                          res= res.replace("Ejecutivo 1", "<td>"+data[i].ejecutivo);
-                          res= res.replace("Negocio 1","<td>"+data[i].datoscliente.razonsocial+"</td>");
-                          res= res.replace("Contacto 1","<td>"+data[i].datoscliente.contacto.nombrecon+"</td>");
-                          res= res.replace("100000","<td>"+data[i].datoscliente.montoprocesadopormes+"</td><TD>");
+                          res= res.replace(18 / 05 / 2034", "<td>"+data[i]fecha+"</td>");
+                          res= res.replace("Ultima Mudanza", "<td>"+data[i].tipo+"</td>");
+                          res= res.replace("MA0123001", "<td>"+data[i].numerito+"</td>");
+                          res= res.replace("Marita", "<td>"+data[i].name);
+                          res= res.replace("Sobrina:Marcia Anton","<td>"+data[i].datoscliente.contacto+"</td>");
                           res= res.replace("quotedetails","quotedetails?cotizacion="+ data[i].numero+" ");
                            res= res.replace("traepdf","traepdf/"+ data[i].numero+" ");
                           
@@ -455,7 +453,7 @@ const Dashboards = (props) => {
             <div className="contenedor3 center">
                 <div className="forma">               
                     <h1 className="forma left_ t_center mar_t_10">
-                        DASHBOARDS
+                        MISIONES
                     </h1>
                 </div>
             </div>    
@@ -463,7 +461,7 @@ const Dashboards = (props) => {
         <div className="forma tit_it">
         <div className="contenedor3 center">
             <div className="forma">
-                <h2 className="forma t_left">Filtrar Dashboards</h2> 
+                <h2 className="forma t_left">Filtrar Misiones</h2> 
                 <form className="forma inputs_filter mar_t_3" action='quotes'>
 
                         <div className="d16 left_" dangerouslySetInnerHTML={textoInputFieldId()}>
@@ -479,30 +477,12 @@ const Dashboards = (props) => {
                         </div>
      
                         <div className="d16 left_">
-                            <label className="forma">Giro MCC</label>
+                            <label className="forma">Tipo</label>
                             <select className="select"   name="listamcc" id="listamcc">
                             <option >Seleciona tu opción</option>
-                            <option>Agencias de Viajes</option>
-                            <option>Aseguradoras</option>
-                            <option>Beneficencia</option>
-                            <option>Comida Rapida</option>
-                            <option>Colegios y Universidades</option>
-                            <option>Entretenimiento</option>
-                            <option>Estacionamientos</option>
-                            <option>Farmacias</option>
-                            <option>Gasolineras</option>
-                            <option>Gobierno</option>
-                            <option>Hospitales</option>
-                            <option>Hoteles</option>
-                            <option>Otros</option>
-                            <option>Peaje</option>
-                            <option>Restaurantes</option>
-                            <option>Renta de Autos</option>
-                            <option>Supermercados</option>
-                            <option>Telecomunicaciones</option>
-                            <option>Transporte Aereo</option>
-                            <option>Transporte Terrestre de Pasajeros</option>
-                            <option>Ventas al detalle (Retail)</option>
+                            <option>Transporte</option>
+                            <option>Mantenimiento</option>
+                            <option>Ultima Mudanza</option>
                             </select>
                         </div>
                         <div className="d16 left_"  dangerouslySetInnerHTML={textoInputFieldContacto()}> 
@@ -515,16 +495,16 @@ const Dashboards = (props) => {
                                     <img src={calendario} />
                                 </div>
                                 <div className="d80 left_ buscar_">
-                                    <b>Buscar dashboards por rango de fecha</b>
+                                    <b>Buscar misiones por rango de fecha</b>
                                 </div>
                             </div>
                             <div className="d16 left_">
                                 <label className="forma">Fecha inicial</label>
-                                <input type="date" id="startf" name="startf" value="2020-09-09" min="2018-01-01"  />
+                                <input type="date" id="startf" name="startf" value="2022-09-09" min="2018-01-01"  />
                             </div>
                             <div className="d16 left_">
                                 <label className="forma">Fecha final</label>
-                                <input type="date" id="endf"  name="endf" value="2020-09-09" min="2018-01-01"  />
+                                <input type="date" id="endf"  name="endf" value="2022-09-09" min="2018-01-01"  />
                             </div>
                             <div className="d50 left_">
                                 <div className="d97 right_">
@@ -559,20 +539,18 @@ const Dashboards = (props) => {
                                 FECHA
                             </th>
                             <th>
-                                EJECUTIVO BW
+                                CLIENTE
                             </th>
                             <th>
-                                NEGOCIO
+                                NOMBRE
                             </th>
                             <th>
-                                GIRO MCC
+                                TIPO
                             </th>
                             <th>
                                 CONTACTO
                             </th>
-                            <th>
-                                MONTO X MES
-                            </th>
+
                             
                             <th className="padd_0 back_r">
                                 ACCIONES
@@ -583,22 +561,19 @@ const Dashboards = (props) => {
                                 D22SG-JG
                             </td>
                             <td>
-                                20 / 03 / 2020
+                                18 / 05 / 2034
                             </td>
                             <td>
-                                <a className="user_tab" href="/quote/usersdetails">Ejecutivo 1</a>
+                                <a className="user_tab" href="/quote/usersdetails"> MA0123001</a>
                             </td>
                             <td>
-                                Negocio 1
+                                Marita
                             </td>
                             <td>
-                                Ejemplo MCC
+                                Ultima Mudanza
                             </td>
                             <td>
-                                Contacto 1
-                            </td>
-                            <td>
-                                100000
+                                Sobrina:Marcia Anton
                             </td>
                             
                             <td>
@@ -613,7 +588,7 @@ const Dashboards = (props) => {
                                 </a>
                             </td>
                         </tr>
-                        
+
                     </tbody>
                 </table>
                 </div>    
