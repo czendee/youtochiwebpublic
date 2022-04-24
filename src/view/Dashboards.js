@@ -53,45 +53,45 @@ const Dashboards = (props) => {
     
     
     function textoInputFieldEjecutivo()  {    console.log('carlos z textoInputFieldEjecutivo paso 1:'+ejecutivo_p );
-//                                          '<label className="forma">Ejecutivo</label> <input type="text" name="ejecutivo" id="ejecutivo" value ="'+ejecutivo_p+'"/>'
+//                                          '<label className="forma">Cliente</label> <input type="text" name="ejecutivo" id="ejecutivo" value ="'+ejecutivo_p+'"/>'
                                           
                                           if (ejecutivo_p == null){
                                                 // your code here.
                                               
-                                                  return {__html: '<label className="forma">Ejecutivo</label> <input type="text" name="ejecutivo" id="ejecutivo" value =""/>'};
+                                                  return {__html: '<label className="forma">Cliente</label> <input type="text" name="ejecutivo" id="ejecutivo" value =""/>'};
                                          
                                             }else{
 
-                                                   return {__html: '<label className="forma">Ejecutivo</label> <input type="text" name="ejecutivo" id="ejecutivo" value ="'+ejecutivo_p+'"/>'};
+                                                   return {__html: '<label className="forma">Cliente</label> <input type="text" name="ejecutivo" id="ejecutivo" value ="'+ejecutivo_p+'"/>'};
                                                                                          
                                             }
                                          };
     
     function textoInputFieldId()  {    console.log('carlos z textoInputFieldId paso 1:'+cotizacion_id );
-//                                          '                            <label className="forma">Id Cotización</label>     <input type="text" name="idcotizacion" id="idcotizacion"  />'
+//                                          '                            <label className="forma">Id Misión</label>     <input type="text" name="idcotizacion" id="idcotizacion"  />'
                                           if (cotizacion_id == null){
                                                 // your code here.
                                               
-                                                  return {__html: '<label className="forma">Id Cotización</label>     <input type="text" name="idcotizacion" id="idcotizacion" value =""/>'};
+                                                  return {__html: '<label className="forma">Id Misión</label>     <input type="text" name="idcotizacion" id="idcotizacion" value =""/>'};
                                          
                                             }else{
 
-                                                  return {__html: '<label className="forma">Id Cotización</label>     <input type="text" name="idcotizacion" id="idcotizacion" value ="'+cotizacion_id+'"/>'};
+                                                  return {__html: '<label className="forma">Id Misión</label>     <input type="text" name="idcotizacion" id="idcotizacion" value ="'+cotizacion_id+'"/>'};
                                                                                          
                                             }
 
                                      };
     
         function textoInputFieldNegocio()  {    console.log('carlos z textoInputFieldNegocio paso 1:'+negocio_p );
-//                                          '                            <label className="forma">Negocio</label>     <input type="text" name="namenegocio" id="namenegocio"  />'
+//                                          '                            <label className="forma">Nombre</label>     <input type="text" name="namenegocio" id="namenegocio"  />'
                                           if (negocio_p == null){
                                                 // your code here.
                                               
-                                                    return {__html: '<label className="forma">Negocio</label>     <input type="text" name="namenegocio" id="namenegocio" value =""/>'};
+                                                    return {__html: '<label className="forma">Nombre</label>     <input type="text" name="namenegocio" id="namenegocio" value =""/>'};
                                              
                                             }else{
 
-                                                          return {__html: '<label className="forma">Negocio</label>     <input type="text" name="namenegocio" id="namenegocio" value ="'+negocio_p+'"/>'};                                                                                         
+                                                          return {__html: '<label className="forma">Nombre</label>     <input type="text" name="namenegocio" id="namenegocio" value ="'+negocio_p+'"/>'};                                                                                         
                                             }
 
 
